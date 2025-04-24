@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
    <html>
    <head>
        <title>Dragonfly Manual</title>
@@ -7,16 +7,52 @@
                font-family: Arial, sans-serif;
                text-align: center;
                margin: 50px;
+               background-color: #f6f8fa;
            }
-           iframe {
-               width: 100%;
-               height: 80vh;
-               border: none;
+           .container {
+               max-width: 800px;
+               margin: 0 auto;
+               padding: 20px;
+               background-color: white;
+               border-radius: 10px;
+               box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+           }
+           h1 {
+               color: #0366d6;
+           }
+           .download-btn {
+               display: inline-block;
+               margin: 20px;
+               padding: 15px 30px;
+               background-color: #0366d6;
+               color: white;
+               text-decoration: none;
+               border-radius: 5px;
+               font-size: 18px;
+               transition: background-color 0.3s;
+           }
+           .download-btn:hover {
+               background-color: #0056b3;
+           }
+           .instructions {
+               margin-top: 30px;
+               text-align: left;
+               padding: 20px;
+               background-color: #f1f8ff;
+               border-radius: 5px;
            }
        </style>
    </head>
    <body>
-       <h1>Dragonfly Manual</h1>
-       <iframe src="index.pdf"></iframe>
+       <div class="container">
+           <h1>Dragonfly Manual</h1>
+           <a href="index.pdf" class="download-btn">Завантажити інструкцію</a>
+           <div class="instructions">
+               <h3>Як відкрити PDF:</h3>
+               <p>1. Натисніть кнопку "Завантажити інструкцію"</p>
+               <p>2. Виберіть "Відкрити" замість "Зберегти"</p>
+               <p>3. PDF відкриється у вашому браузері</p>
+           </div>
+       </div>
    </body>
    </html>
